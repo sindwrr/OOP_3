@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj" />
-    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\ShopApp.DAL\ShopApp.DAL.csproj" />
+    <ProjectReference Include="..\ShopApp.Models\ShopApp.Models.csproj" />
   </ItemGroup>
 
 </Project>
