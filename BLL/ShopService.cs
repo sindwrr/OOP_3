@@ -1,7 +1,7 @@
-﻿using OOP_3.Models;
-using OOP_3.DAL;
+﻿using ShopApp.Models;
+using ShopApp.DAL;
 
-namespace OOP_3.BLL
+namespace ShopApp.BLL
 {
     // сервис (BLL) для взаимодействия с магазинами
     public class ShopService

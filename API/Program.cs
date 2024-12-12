@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OOP_3.DB;
-using OOP_3.DAL;
-using OOP_3.DAL.DBRep;
-using OOP_3.DAL.FileRep;
-using OOP_3.BLL;
+using ShopApp.DB;
+using ShopApp.DAL;
+using ShopApp.DAL.DBRep;
+using ShopApp.DAL.FileRep;
+using ShopApp.BLL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +18,10 @@ if (dalStorage == "File")
     builder.Services.AddTransient<IShopRepository>(sp => new FileShopRepository());
     builder.Services.AddTransient<IProductStockRepository>(sp => new FileProductStockRepository());
 }
-else if (dalStorage == "Database")
+else if (dalStorage == "Database" || dalStorage == "DB")
 {
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlite("Data Source=Data/data.db;"));
+        options.UseSqlite($"Data Source={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "data.db")};"));
     builder.Services.AddTransient<IShopRepository, DatabaseShopRepository>();
     builder.Services.AddTransient<IProductStockRepository, DatabaseProductStockRepository>();
 }

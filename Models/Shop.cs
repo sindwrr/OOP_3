@@ -1,4 +1,4 @@
-﻿namespace OOP_3.Models
+﻿namespace ShopApp.Models
 {
     // класс магазина
     public class Shop

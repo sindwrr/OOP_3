@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-using OOP_3.DB;
-using OOP_3.Models;
+using ShopApp.DB;
+using ShopApp.Models;
 
-namespace OOP_3.DAL.DBRep
+namespace ShopApp.DAL.DBRep
 {
     // хранение магазинов в БД
     public class DatabaseShopRepository : IShopRepository

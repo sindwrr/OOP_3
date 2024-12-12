@@ -1,4 +1,4 @@
-﻿namespace OOP_3.Models
+﻿namespace ShopApp.Models
 {
     // класс партии товаров
     public class ProductStock

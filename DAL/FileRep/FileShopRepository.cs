@@ -1,11 +1,11 @@
-﻿using OOP_3.Models;
+﻿using ShopApp.Models;
 
-namespace OOP_3.DAL.FileRep
+namespace ShopApp.DAL.FileRep
 {
     // хранение магазинов в файле
     public class FileShopRepository : IShopRepository
     {
-        private const string FilePath = "Data/shop.csv";
+        private string FilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "shop.csv");
 
         // создать магазин
         public async Task CreateShop(Shop shop)

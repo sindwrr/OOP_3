@@ -1,6 +1,6 @@
-﻿using OOP_3.Models;
+﻿using ShopApp.Models;
 
-namespace OOP_3.DAL
+namespace ShopApp.DAL
 {
     // интерфейс хранилища продуктов
     public interface IProductStockRepository

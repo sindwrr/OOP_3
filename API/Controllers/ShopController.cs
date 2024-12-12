@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using OOP_3.Models;
-using OOP_3.BLL;
+using ShopApp.Models;
+using ShopApp.BLL;
 
-namespace OOP_3.Controllers
+namespace ShopApp.Controllers
 {
     // контроллеры для API магазинов
     [ApiController]
